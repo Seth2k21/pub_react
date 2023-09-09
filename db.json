@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "Jean-Laurest",
+      "surname": "AGBOHINOU",
+      "email": "jeanlaurestobedagbohinou@gmail.com",
+      "password": "123456789",
+      "confirmpassword": "123456789",
+      "id": 1
+    },
+    {
+      "name": "Egide",
+      "surname": "Vortex",
+      "email": "vortex@gmail.com",
+      "password": "147852369",
+      "confirmpassword": "147852369",
+      "id": 2
+    }
+  ],
+  "tasks": [
+    {
+      "image": "https://img.freepik.com/photos-gratuite/vue-face-fille-triste-victime-intimidation_23-2149748403.jpg?w=740&t=st=1694286998~exp=1694287598~hmac=15b7c2a3944c631a03c68d3661f9528db86146368d0dec5220e30d3df2a98bbd",
+      "title": "Eat chiken",
+      "description": "cmdncdc djcdcdkc ek dkcedk d, ckjdc  dsckdnc ddkj dclksdc dsdkjnsd, sdn d dkn sw, d",
+      "date": "2023-09-09T22:04",
+      "idUser": 2,
+      "creat_at": "2023-09-09T21:04:16.069Z",
+      "status": false,
+      "id": 10
+    }
+  ]
+}
