@@ -43,7 +43,7 @@ export default function TaskItem({task}) {
     return (
       <Box width={'100%'} bgcolor={task.status && 'green' || '#fff'} borderRadius={5} padding={2} marginTop={3}>  
           <Stack direction={'row'} justifyContent={'space-between'}>
-            <Stack justifyContent={'space-between'} direction={'row'} alignItems={'center'}>
+            <Stack justifyContent={'space-between'} direction={''} alignItems={'center'}>
               <Avatar src={task.image} />
               <Typography marginLeft={2}>{task.title}</Typography>
             </Stack>
@@ -66,7 +66,7 @@ export default function TaskItem({task}) {
             </Stack>
           </Stack>
           <br />
-          <b>Description</b>
+          <b> <Stack marginBottom={2}>{task.nameUser}</Stack></b>
           <p>{task.description}</p>
       </Box>
     )

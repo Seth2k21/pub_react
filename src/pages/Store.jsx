@@ -25,6 +25,7 @@ function Store() {
     onerror: () => console.log(errort)
   });
   if (isLoading) {
+    // localStorage.removeItem('user')
     return <div>Loading...</div>
   }
   let taskTrier = tasking.sort((a, b) => {
@@ -48,6 +49,7 @@ function Store() {
           {tasking && taskTrier.map((task) => (
             <TaskItem task={task}/>
           ))}
+          
         </Box>
 
       </Stack>

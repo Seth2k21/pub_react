@@ -14,7 +14,7 @@ function App() {
     <>
       <Box >
         <Stack direction={'row'} position={'absolute'} top={0} padding={2} width={'100%'} alignItems={'center'} justifyContent={'space-between'}>
-          <Typography variant='h5' color={'#fff'}>Todo-List</Typography>
+          <Typography variant='h5' color={'#fff'}>Pub</Typography>
           <Stack direction={'row'} gap={3} >
             <Link style={{color: '#fff', textDecoration: 'none', fontWeight: 'bold'}} to="/login">Login</Link>
             <Link style={{color: '#fff', textDecoration: 'none', fontWeight: 'bold'}} to="/register">Register</Link>

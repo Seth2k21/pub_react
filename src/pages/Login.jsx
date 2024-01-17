@@ -32,8 +32,8 @@ function Login() {
             <br />
             <form onSubmit={handleSubmit(onSubmit)}>
               <Stack direction={'column'} gap={2}>
-                <TextField type='email' fullWidth id='outlined-basic' label='Email' variant='outlined' {...register('email', {required: 'Email is required*',})} />
-                <TextField type='password' fullWidth id='outlined-basic' label='Password' variant='outlined' {...register('password', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
+                <TextField type='email' fullWidth id='filled-basic' label='Email' variant='filled' {...register('email', {required: 'Email is required*',})} />
+                <TextField type='password' fullWidth id='filled-basic' label='Password' variant='filled' {...register('password', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
               </Stack>
               <Button variant='contained' type='submit' sx={{marginTop: 2,}}>Login</Button>
             </form>

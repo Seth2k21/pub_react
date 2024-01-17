@@ -10,9 +10,11 @@ function AddNew() {
   const usequeryclient = useQueryClient();
   const user = JSON.parse(localStorage.getItem('user'));
   const {handleSubmit, register, reset, formState: {errors}} = useForm();
+
   const mutation = useMutation({
     mutationFn: (newTask) => {
       return axios.post(`http://localhost:3000/tasks`, newTask);
+      
     },
     onError: (error) => {
       toast.error('Failed to save task');
@@ -23,8 +25,9 @@ function AddNew() {
       toast.success('Task successful saved');
     }
   });
+
   const onSubmit = (data) => {
-    const task = {...data, idUser: user.id, creat_at: new Date(), status: false};
+    const task = {...data, idUser: user.id, nameUser: user.name, creat_at: new Date(), status: false};
     mutation.mutate(task);
   };
 

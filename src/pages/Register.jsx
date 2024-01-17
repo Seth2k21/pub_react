@@ -42,11 +42,11 @@ function Register() {
           <br />
           <form onSubmit={handleSubmit(onSubmit)}>
             <Stack direction={'column'} gap={2}>
-              <TextField fullWidth id='outlined-basic' label='Name' variant='outlined' {...register('name', {required: 'Name is required*'})} />
-              <TextField fullWidth id='outlined-basic' label='Surname' variant='outlined' {...register('surname', {required: 'Surname is required*'})} />
-              <TextField type='email' fullWidth id='outlined-basic' label='Email' variant='outlined' {...register('email', {required: 'Email is required*',})} />
-              <TextField type='password' fullWidth id='outlined-basic' label='Password' variant='outlined' {...register('password', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
-              <TextField type='password' fullWidth id='outlined-basic' label='Confirm Password' variant='outlined' {...register('confirmpassword', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
+              <TextField fullWidth id='filled-basic' label='Name' variant='filled' {...register('name', {required: 'Name is required*'})} />
+              <TextField fullWidth id='filled-basic' label='Surname' variant='filled' {...register('surname', {required: 'Surname is required*'})} />
+              <TextField type='email' fullWidth id='filled-basic' label='Email' variant='filled' {...register('email', {required: 'Email is required*'})} />
+              <TextField type='password' fullWidth id='filled-basic' label='Password' variant='filled' {...register('password', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
+              <TextField type='password' fullWidth id='filled-basic' label='Confirm Password' variant='filled' {...register('confirmpassword', {required: 'Password is required*', minLength: {value: 8, message: 'Password should contain 8 characteres*'}})} />
             </Stack>
             <Button variant='contained' type='submit' sx={{marginTop: 2,}}>Register</Button>
           </form>
