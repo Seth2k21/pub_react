@@ -10,5 +10,5 @@ Currently, two official plugins are available:
 
 
 
--Pour démarrer le server: npm run dev, 
--Pour demarer le serveur json: npm json-server --watch db.json           
+    Pour démarrer le serveur : npm run dev,
+    Pour démarrer le serveur JSON : npx json-server --watch db.json.          
